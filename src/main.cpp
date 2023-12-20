@@ -1,6 +1,8 @@
 #include <Arduino.h>
 #include <Preferences.h>
 
+// komentarz dla testu githuba
+
 class User
 {
 public:
@@ -60,7 +62,7 @@ void loop()
     }
     // Następnie możesz wysłać odpowiedź do komputera przez Serial
     // Serial.println(data);
-    //delay(100);
+    // delay(100);
   }
 }
 
