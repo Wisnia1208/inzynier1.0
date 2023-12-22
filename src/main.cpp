@@ -112,13 +112,13 @@ void loop()
       for (int i = 0; i < 10; i++)
       {
         // preferences.getBytes("klucz"+(i+97), &users[i], sizeof(users[i]));
-        String pakiet = (String(users[i].platform) + " " + String(users[i].username) + " " + String(users[i].password));
+        String pakiet = ("ptfr:" + String(users[i].platform) + " usrn:" + String(users[i].username) + " pssw:" + String(users[i].password));
         Serial.println(pakiet);
       }
     }
     else
     {
-      //Serial.println(data);
+      // Serial.println(data);
       Serial.println("incorrect login data");
     }
     // Następnie możesz wysłać odpowiedź do komputera przez Serial
