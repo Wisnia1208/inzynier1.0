@@ -118,8 +118,8 @@ void loop()
     }
     else
     {
-      Serial.println(data);
-      // Serial.println("incorrect login data");
+      //Serial.println(data);
+      Serial.println("incorrect login data");
     }
     // Następnie możesz wysłać odpowiedź do komputera przez Serial
     // Serial.println(data);
