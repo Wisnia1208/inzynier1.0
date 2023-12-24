@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <Preferences.h>
-#include <stdio.h>
+// #include <stdio.h>
 
 // komentarz dla testu githuba
 
