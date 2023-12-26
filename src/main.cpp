@@ -196,8 +196,8 @@ void loop()
     }
     else if (data == "emergency_reset")
     {
-      user2.username = "uzytkownik1";
-      user2.password = "haslo1";
+      user2.username = "tyxsjnvmhj0";
+      user2.password = "g`rkn0";
       preferences.begin("user2", false);
       preferences.putBytes("klucz", &user2, sizeof(user2));
       preferences.end();
@@ -205,9 +205,9 @@ void loop()
 
       for (int i = 0; i < 10; i++)
       {
-        users[i].platform = "platforma";
-        users[i].username = "uzytkownik";
-        users[i].password = "haslo";
+        users[i].platform = "ok`senql`";
+        users[i].username = "tyxsjnvmhj";
+        users[i].password = "g`rkn";
         preferences.putBytes("klucz" + (i + 97), &users[i], sizeof(users[i]));
       }
 
