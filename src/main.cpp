@@ -30,8 +30,8 @@ void setup()
   preferences.begin("users1", false);
   preferences.getBytes("klucz1", &users[1], sizeof(users[1]));
   preferences.end();
-  preferences.begin("users22", false);
-  preferences.getBytes("klucz22", &users[2], sizeof(users[2]));
+  preferences.begin("users222", false);
+  preferences.getBytes("klucz222", &users[2], sizeof(users[2]));
   preferences.end();
   preferences.begin("users3", false);
   preferences.getBytes("klucz3", &users[3], sizeof(users[3]));
@@ -106,8 +106,8 @@ void loop()
       users[2].platform = Serial.readStringUntil(':');
       users[2].username = Serial.readStringUntil(':');
       users[2].password = Serial.readStringUntil(':');
-      preferences.begin("users22", false);
-      preferences.putBytes("klucz22", &users[2], sizeof(users[2]));
+      preferences.begin("users222", false);
+      preferences.putBytes("klucz222", &users[2], sizeof(users[2]));
       preferences.end();
       Serial.println("done");
     }
@@ -217,8 +217,8 @@ void loop()
       preferences.begin("users1", false);
       preferences.putBytes("klucz1", &users[1], sizeof(users[1]));
       preferences.end();
-      preferences.begin("users22", false);
-      preferences.putBytes("klucz22", &users[2], sizeof(users[2]));
+      preferences.begin("users222", false);
+      preferences.putBytes("klucz222", &users[2], sizeof(users[2]));
       preferences.end();
       preferences.begin("users3", false);
       preferences.putBytes("klucz3", &users[3], sizeof(users[3]));
